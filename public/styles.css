@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #36a9e0; /* Dodane tło */
+  
+  }
+  
+  h1, form {
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  /* Dodane style dla pól formularza */
+  form input {
+    width: 200px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  /* Dodane style dla przycisku */
+  button {
+    margin-top: 15px;
+  }
+  
+  img {
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
+  }
+  form input.error {
+    border-color: red; /* Kolor obwódki dla błędnych pól */
+  }
+  
+  .error-message {
+    color: red; /* Kolor tekstu dla komunikatu o błędzie */
+  }
