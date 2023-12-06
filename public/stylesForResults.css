@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #36a9e0;
+  }
+  
+  h1 {
+    color: #ffffff;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 300px; /* Dostosuj szerokość tabeli według potrzeb */
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #000000; /* Czarne obwódki dla nagłówków i komórek danych */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Kolor tła dla nagłówków */
+  }
+  
+  img {
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
+  }

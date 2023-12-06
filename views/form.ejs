@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formularz</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <img src="/duck.jpg" alt="Opis obrazu"style="width: 200px; height: 150px;">
+
+  <% if (errors) { %>
+    <% errors.forEach(function (error) {%>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <%= error.msg %>
+      </div>
+      <% }) %>
+    <% } %>
+
+  <form action="/submit" method="post">
+    <label for="imie">Nick:</label>
+    <input type="text" name="imie" id="imie">
+    <% if(errors){ %>
+      <% errors.forEach(function(error) {%>
+        <% if(error.path == 'imie') {%>
+          <span style="color: red"><%= error.msg %></span>
+        <% } %>
+      <% }) %>
+    <% } %>
+
+    <label for="wiek">Wiek:</label>
+    <input type="number" name="wiek" id="wiek">
+    <% if(errors){ %>
+      <% errors.forEach(function(error) {%>
+        <% if(error.path == 'wiek') {%>
+          <span style="color: red"><%= error.msg %></span>
+        <% } %>
+      <% }) %>
+    <% } %>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <% if(errors){ %>
+      <% errors.forEach(function(error) {%>
+        <% if(error.path == 'email') {%>
+          <span style="color: red"><%= error.msg %></span>
+        <% } %>
+      <% }) %>
+    <% } %>
+
+    <button type="submit">Wyślij</button>
+  </form>
+</body>
+</html>
