@@ -1,0 +1,80 @@
+Date and Time: 7.12.2023, 18:47:50
+Method: POST
+URL: /submit
+Error: undefined
+
+Date and Time: 7.12.2023, 18:48:17
+Method: POST
+URL: /submit
+Error: undefined
+
+Date and Time: 7.12.2023, 18:48:30
+Method: POST
+URL: /submit
+Error: undefined
+
+Date and Time: 7.12.2023, 19:03:25
+Method: POST
+URL: /submit
+Error: Imię musi zawierać co najmniej 2 znaki i nie więcej niż 20
+
+Date and Time: 7.12.2023, 19:03:38
+Method: POST
+URL: /submit
+Error: Musisz mieć co najmniej 18 lat, ale też nie więcej niż 100 xd
+
+Date and Time: 7.12.2023, 19:03:51
+Method: POST
+URL: /submit
+Error: Imię musi zawierać co najmniej 2 znaki i nie więcej niż 20
+
+Date and Time: 7.12.2023, 19:04:07
+Method: POST
+URL: /submit
+Error: Musisz mieć co najmniej 18 lat, ale też nie więcej niż 100 xd
+
+Date and Time: 7.12.2023, 19:04:18
+Method: POST
+URL: /submit
+Error: Niepoprawny format adresu email.
+
+Date and Time: 7.12.2023, 19:09:25
+Method: POST
+URL: /submit
+Error:
+Imię musi zawierać co najmniej 2 znaki i nie więcej niż 20
+Musisz mieć co najmniej 18 lat, ale też nie więcej niż 100 xd
+Niepoprawny format adresu email.
+
+Date and Time: 7.12.2023, 19:09:41
+Method: POST
+URL: /submit
+Error:
+Musisz mieć co najmniej 18 lat, ale też nie więcej niż 100 xd
+
+Date and Time: 7.12.2023, 19:10:11
+Method: POST
+URL: /submit
+Error:
+Imię musi zawierać co najmniej 2 znaki i nie więcej niż 20
+Musisz mieć co najmniej 18 lat, ale też nie więcej niż 100 xd
+Niepoprawny format adresu email.
+
+Date and Time: 7.12.2023, 19:10:26
+Method: POST
+URL: /submit
+Error:
+Imię musi zawierać co najmniej 2 znaki i nie więcej niż 20
+
+Date and Time: 7.12.2023, 19:10:33
+Method: POST
+URL: /submit
+Error:
+Musisz mieć co najmniej 18 lat, ale też nie więcej niż 100 xd
+
+Date and Time: 7.12.2023, 19:10:44
+Method: POST
+URL: /submit
+Error:
+Niepoprawny format adresu email.
+
