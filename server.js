@@ -12,16 +12,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(bodyParser.urlencoded({ extended: true }));
-//czytanie pliku
-fs.readFile(path.join(__dirname,'errorLogs', 'starter.txt'),'utf-8', (err, data)=>{
-  if(err) throw err;
-  console.log(data)
-})
-//tworzenie pliku
-fs.appendFile(path.join(__dirname,'errorLogs', 'newFile2.txt'),'\n\nhate nigrus', (err)=>{
-  if(err) throw err;
-  console.log('write complete')
-})
 
 app.get('/', (req, res) => {
   res.render('form', { errors: null });
