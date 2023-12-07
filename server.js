@@ -32,9 +32,9 @@ app.post('/submit', [
   const errors = validationResult(req);
 
   if (!errors.isEmpty()){
-    var errorLog = `Date and Time: ${new Date().toLocaleString()}\nMethod: ${req.method}\nURL: ${req.originalUrl}\nError:\n`;
+    var errorLog = `Date and Time: ${new Date().toLocaleString()}\tMethod: ${req.method}\tURL: ${req.originalUrl}\tError: `;
     errors.array().forEach(error => {
-      errorLog += `${error.msg}\n`;
+      errorLog += `${error.msg}\t`;
     });
   
     errorLog += '\n';
