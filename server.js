@@ -30,7 +30,6 @@ app.post('/submit', [
   const { imie, wiek, email } = req.body;
 
   const errors = validationResult(req);
-
   if (!errors.isEmpty()){
     var errorLog = `Date and Time: ${new Date().toLocaleString()}\tMethod: ${req.method}\tURL: ${req.originalUrl}\tError: `;
     errors.array().forEach(error => {
@@ -38,11 +37,12 @@ app.post('/submit', [
     });
   
     errorLog += '\n';
-	  fs.appendFile(path.join(__dirname,'errorLogs', 'erorlogs.txt'),errorLog, (err)=>{
-		if(err) throw err;
-		console.log('write complete')
+    fs.appendFile(path.join(__dirname,'errorLogs', 'erorlogs.txt'),errorLog, (err)=>{
+    if(err) throw err;
+    console.log('write complete')
     })
   }
+
 
   if (errors.isEmpty()) {
      return res.render('results', { imie, wiek, email }); 
@@ -52,6 +52,8 @@ app.post('/submit', [
     errors: errors.array()
   });
 });
+
+
 
 app.listen(port, () => {
   console.log(`Serwer działa na porcie ${port}`);
